@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
 	function conversion(numero1, numero2) {
 		var conversion = numero1 / numero2;
         var redondo = conversion.toFixed(2);
-		return redondo;
+		return redondo; /* otra manera pudo ser conversion.toFixed(2)*/
 	}
 });
 
@@ -33,8 +33,8 @@ window.addEventListener("load", function() {
     var opcion = prompt(mensaje);
 
     if(opcion == "1"){
-      var num1 = parseInt(prompt("Ingresa el tipo de cambio"));
-      var num2 = parseInt(prompt("Ingresa el monto en soles"));
+      var num1 = parseFloat(prompt("Ingresa el tipo de cambio"));
+      var num2 = parseFloat(prompt("Ingresa el monto en soles"));
     }
 
     switch(opcion) {

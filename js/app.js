@@ -15,7 +15,7 @@ window.addEventListener("load", function() {
 	});
 
 	function conversion(numero1, numero2) {
-		var conversion = numero1 * numero2;
+		var conversion = numero1 / numero2;
         var redondo = conversion.toFixed(2);
 		return redondo;
 	}
@@ -40,7 +40,7 @@ window.addEventListener("load", function() {
     switch(opcion) {
       case "1":
         if(num1 >= 1 && num2 >= 1){
-          var conversion = num1 * num2;
+          var conversion = num1 / num2;
           var redondo = conversion.toFixed(2);
           alert("Tu monto en Dólares es: $ " + redondo);
         }

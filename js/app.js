@@ -2,8 +2,8 @@
 window.addEventListener("load", function() {
 	var boton = document.getElementById("calcular");
 	boton.addEventListener("click", function() {
-		var numero1 = parseInt(document.getElementById("numero1").value);
-		var numero2 = parseInt(document.getElementById("numero2").value);
+		var numero1 = parseFloat(document.getElementById("numero1").value);
+		var numero2 = parseFloat(document.getElementById("numero2").value);
     if(numero1 >= 1 && numero2 >= 1){
       var resultado = document.getElementById("resultado");
       resultado.innerHTML = "<p>El resultado es $ " + conversion(numero1,numero2) + "</p>";

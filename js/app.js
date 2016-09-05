@@ -9,7 +9,9 @@ window.addEventListener("load", function() {
       resultado.innerHTML = "<p>El resultado es $ " + conversion(numero1,numero2) + "</p>";
     } else {
       var resultado = document.getElementById("resultado");
-      resultado.innerHTML = "<p>Ingresa un valor válido" + "</p>";
+        document.getElementById("numero2").value = "";
+        document.getElementById("numero2").value = "";
+        resultado.innerHTML = "<p>Ingresa un valor válido" + "</p>";  
     }
 		
 	});
